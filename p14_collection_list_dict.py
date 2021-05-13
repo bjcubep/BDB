@@ -1,7 +1,7 @@
 # -*- coding:utf-8 -*-
 # list + dict + 객체
 
-student = [[90, 50], [80, 60], [60, 30]]
+student = [[90, 50], [80, 60], [60, 30]]        #list안에 list
 print(student[0])  # 첫번째 학생의 모든 점수
 print(student[0][1])  # 첫번째 학생의 두번째 점수 데이터
 
@@ -10,6 +10,7 @@ student2 = {"홍길동":[90, 50], "김길동":[80, 60], "이길동":[60, 30]}
 print(student2["홍길동"])  # 홍길동의 모든 점수 
 print(student2["홍길동"][1])  # 홍길동의 두번째 점수 데이터 / dict안에 value값이 list인 데이터
 
+# 조건을 보고 데이터 구성하기 1. print(student3["홍"]["기말"])
 student3 = {
             "홍": {"중간":90, "기말":50},
             "이": {"중간":80, "기말":60},
@@ -17,6 +18,7 @@ student3 = {
             }
 print(student3["홍"]["기말"])  # 홍의 기말점수데이터 / dict안에 dict로 구성된 데이터로 만들어야 함
 
+# 조건을 보고 데이터 구성하기 2. print(student4[0]["기말"])
 student4 = [
             {"중간":90, "기말":50}, 
             {"중간":80, "기말":60},
@@ -37,7 +39,7 @@ air = {"RealtimeCityAir":{"list_total_count":25,"RESULT":{"CODE":"INFO-000","MES
 
 print(air["RealtimeCityAir"]["row"][1]["PM10"])     # 두번째 도시 PM10
 print(air["RealtimeCityAir"]["row"][2]["PM25"])     # 세번째 도시 PM25
-print(air["RealtimeCityAir"]["row"][24]["IDEX_NM"])     
+# print(air["RealtimeCityAir"]["row"][24]["IDEX_NM"])     
 print(air["RealtimeCityAir"]["row"][-1]["IDEX_NM"])     # 마지막 도시 상태
 
 wData = {"coord":{"lon":126.9778,"lat":37.5683},"weather":[{"id":800,"main":"Clear","description":"맑음","icon":"01d"}],"base":"stations","main":{"temp":25.53,"feels_like":24.66,"temp_min":22.64,"temp_max":26.64,"pressure":1011,"humidity":20,"sea_level":1011,"grnd_level":1005},"visibility":10000,"wind":{"speed":4.92,"deg":134,"gust":6.27},"clouds":{"all":0},"dt":1620716801,"sys":{"type":1,"id":8105,"country":"KR","sunrise":1620678396,"sunset":1620729024},"timezone":32400,"id":1835848,"name":"Seoul","cod":200}

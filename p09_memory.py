@@ -8,10 +8,10 @@ print(aa, aa[0], id(aa))
 print(aa, aaa[0], id(aaa))
 print("---------")
 
-c = a               # a변수에 들어있던 stack 번지 값(id) b에 넣어 줌 heap값은 새로 생기지 않음 
+b = a               # a변수에 들어있던 stack 번지 값(id) b에 넣어 줌 heap값은 새로 생기지 않음 
 bb = aa             # bb변수에 aa변수의 stack 번지 값 넣어 줌 heap값 생성 X
-bbb = aaa           # bbb변수에 aaa변수의 값 넣어줌 (stack, heap 새로 생성x)
-print(c)
+bbb = aaa           # bbb변수에 aaa변수의 값 넣어줌 (stack 번지 값, heap 새로 생성x)
+print(b)
 print(bb, bb[0])
 print(bbb, bbb[0])
 print("---------")

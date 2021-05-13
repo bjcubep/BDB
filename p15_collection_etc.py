@@ -22,7 +22,7 @@ ll = list(rr)
 print(ll)
 print("--------------")
 
-# tuple : list와 거의 동일한 기능, collection의 용도 보다는 다른 식으로 활용
+# tuple : list와 거의 동일한 기능, collection의 용도보다는 다른 식으로 활용
 t = (10, 20, 30, 10, 50)  
 print(t, type(t))
 print(t[0])  # indexing 가능

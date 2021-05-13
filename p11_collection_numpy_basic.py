@@ -14,21 +14,20 @@
 # 인공신경망 (tensorflow)
 
 # Python의 library 관리시스템 : pip 
-#        cmd -->  pip insrall 이름
+#        cmd -->  pip install 이름
 
 # NumPy : list에 분석용으로 이런저런 기능 추가 
 #        pip install numpy
 
-# numpy 불러와서 앞으로는 np라는 이름으로 사용
-import numpy as np
+import numpy as np      # numpy 불러와서 앞으로는 np라는 이름으로 사용
 
-test = np.array([[10, 20],[30, 40],[50, 60]])
+test = np.array([[10, 20],[30, 40],[50, 60]])        #array 생성
 print(test)             # 전체
 print(test[0])          # 특정데이터 접근
 print(test[0][1])       # 기존 list 스타일
 print(test[0, 1])       # numpy 스타일
 
-print(test.shape)
+print(test.shape)       # 몇 행 몇 열인지
 print("----------")
 
 test = np.zeros([3,2])          # 0으로 shape채워서 생성
@@ -51,7 +50,6 @@ print(test)
 print(test.shape)
 print("----------")
 
-print("----------")
 kor = np.array([100, 90, 80])       #NumPy array생성(python list)
 eng = np.array([60, 70, 50])
 print(kor)          # 전체

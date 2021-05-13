@@ -18,7 +18,7 @@ l = list(l)     # 다시 list로 변환
 print(l)
 print("-----------")
 
-# dict : 순서 개념x, 키:값(key:value) 형태
+# dict : 순서 개념x, 키:값(key:value) 형태 (dict 자체는 indexing안됨, 키값으로)
 d = {"사과":500, "감자":300}
 print(d["사과"])
 

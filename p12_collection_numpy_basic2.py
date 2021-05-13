@@ -17,7 +17,7 @@ print("------------")
 print(a[0])         
 print(a[0, 1])
 print(a[0, 1:3])
-print(a[:, 0])  # : 전체 
+print(a[:, 0])  # : 전체에서, index 0만 [1, 5]
 
 a[0, 1:3] = 100  # indexing해서 한번에 바꾸기
 a[:, 0] = 500
@@ -32,10 +32,10 @@ parent = np.array([["홍판서", "홍어머니"], ["김판서", "김엄니"], ["
 # masking : 조건으로 조회
 #     조건식을 수행해서 만족하는 인덱스들이 결과값으로 나오는 구조
 print(age[age >= 20])
-print(age[(age >= 5) & (age <= 25)])  # and/or --> &/| 사용
-print(age[name == "홍"])
+print(age[(age >= 5) & (age <= 25)])    # and/or --> &/| 사용
+print(age[name == "홍"])     #이름이 "홍"인 사람의 나이
 
-print(name[age >= 20])  # 20살이상인 사람 이름들
+print(name[age >= 20])  # 나이가 20살이상인 사람 이름들
 print(name[(age >= 5) & (age <= 20)])
 print("----------------")
 
